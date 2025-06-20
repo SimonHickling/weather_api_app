@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Vanilla JS API</title>
+  </head>
+  <body>
+    <div class="weather-app-container">
+      <div class="image-container">
+        <img src="images/sunshine.png" alt="Weather Type" id="weather-image" />
+      </div>
+
+      <div class="outer-container">
+        <div class="title-input-container">
+          <h1 class="app-header">WEATHER</h1>
+          <h2 class="city-label">Enter your city below:</h2>
+          <div class="user-input-container">
+            <input type="text" id="location" placeholder="e.g. London" />
+          </div>
+        </div>
+        <div class="output-window" id="output-window">
+          <p>Results</p>
+        </div>
+        <div class="icon-container">
+          <h2 id="icon">comfort level</h2>
+        </div>
+        <button id="button">Get Weather</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
