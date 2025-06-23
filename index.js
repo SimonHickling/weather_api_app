@@ -47,6 +47,7 @@ btn.onclick = function() {
             output.innerHTML = `<p>Temperature in ${location}: ${temperature} degrees C</p> <p> Weather: ${description}</p>`;
             setIcon(temperature); //calls the setIcon function below
             setImg(description)
+            setDegrees(temperature)
         })
         .catch(error => {
             console.error('Error:', error);
@@ -87,6 +88,9 @@ btn.onclick = function() {
   }
 };
     
-
-
-
+const setDegrees = (temperature) => {
+  const degreesText = document.getElementById('degrees-text');
+  if (degreesText) {
+    degreesText.innerHTML = Math.round(temperature) + "°C";
+  }
+};
