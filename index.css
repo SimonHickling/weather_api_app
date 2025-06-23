@@ -164,3 +164,21 @@ button:hover {
   color: #2a51ba;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 750px) {
+  .weather-app-container {
+    width: 350px;
+  }
+  .image-container {
+    height: 300px;
+  }
+  .title-input-container {
+    width: 320px;
+  }
+  .degrees-text {
+    font-size: 7rem;
+  }
+  .output-window {
+    width: 320px;
+  }
+}
